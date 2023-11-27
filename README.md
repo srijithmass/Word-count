@@ -18,12 +18,18 @@ Anaconda - Python 3.7
 ### Step 6: Call the funtion 
 
 ## PROGRAM:
-```
+```py
 '''
 python program for getting the word count from a text.
 Developed by: SRIJITH R
 RegisterNumber: 21004191
 '''
+
+with open("text.txt",'w')as fp:
+  fp.write("Hello have a good day")
+  fp.write("\nWelcome to python programming")
+  fp.write("\nPython Files concept\n")
+
 def wordcount(filen):
   count = 0
   with open(filen,"r") as f1:
